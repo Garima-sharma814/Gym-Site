@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Gym</title>
+    script
+        include ../JavaScript/index.js
+    style
+        include ../CSS/home.css
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo-name">Red Gym</div>
+        <div>
+            <ul class="list-items">
+                <li class="item"><a href="/">Home</a></li>
+                <li class="item"><a href="#service">Service</a></li>
+                <li class="item"><a href="#about">About</a></li>
+                <li class="item"><a href="/views/contact.pug">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="search">
+            <input type="text" name="Search Box" placeholder="Search">
+            <img src="../static/images/nav-search.png" alt="search.png">
+        </div>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome to <span>Red</span> Gym</h1>
+        <p>There is no tomorrow do it now !</p>
+        <p>No Excuses allowed !!</p>
+        <button class="btn">Details</button>
+    </section>
+    <section class="services" id="service">
+        <h1 class="center h-secondary extra">Our services</h1>
+        <div id="services">
+            <div class="card card1 center">
+                <img src="../static/images/cardio.jpg" alt="Cardio.png">
+                <h2>Cardio</h2>
+                <p>Aerobic exercise is physical exercise of low to high intensity that depends primarily on the aerobic
+                    energy-generating process."Aerobic" is defined as "relating to, involving, or requiring free oxygen
+                    which usually refers to the use of oxygen to adequately meet energy demands during exercise via
+                    aerobic metabolism. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium recusandae consectetur earum culpa</p><br>
+                <a href="/">Details</a>
+            </div>
+            <div class="card card2 center">
+                <img src="../static/images/zumba.jpg" alt="Zumba.png">
+                <h2>Zumba</h2>
+                <p>Zumba is an exercise fitness program created by Colombian dancer and choreographer Alberto "Beto" pérez. Zumba is a trademark owned by Zumba Fitness, LLC. The Brazilian pop singer Claudia Leitte has become the international ambassador to Zumba Fitness.The most awesome workout ever.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><br>
+                <a href="/">Details</a>
+            </div>
+            <div class="card card3 center">
+                <img src="../static/images/yoga.jpg" alt="">
+                <h2>Yoga</h2>
+                <p>Yoga is a group of physical, mental, and spiritual practices or disciplines which originated in ancient India. Yoga is one of the six orthodox philosophical schools of Hinduism. There is a broad variety of yoga schools, practices, and goals in Hinduism, Buddhism, and Jainism. Accompanied by breathing Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut eius </p><br>
+                <a href="/">Details</a>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="glass-container">
+            <h1 class="center h-secondary">About Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dolore voluptatibus dolores vitae. Voluptas, explicabo possimus eius, hic reprehenderit assumenda voluptatem autem laboriosam dicta corporis repudiandae accusamus quibusdam sint ratione dolor omnis esse maxime! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam debitis dicta tempore corrupti doloremque a deleniti dolore repudiandae adipisci. Consequuntur, eveniet accusamus possimus, dolorum, recusandae cumque obcaecati corrupti </p><br>
+</div>
+    </section>
+    <button id="top" onclick="topFunction">
+        <img src="/static/images/top.png" alt="Go to top" style="height: 3rem">
+    </button>
+<footer>Copyright © reserved - Red Gym</footer>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym</title>
+  style
+      include ../CSS/style.css
+</head>
+
+<body>
+  <nav id='navbar'>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/#about">About</a></li>
+      <li><a href="/views/contact.pug">Contact</a></li>
+      <li><a href="/#service">Services</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <h1>Welcome to the <span>RED</span> Gym </h1>
+    <h2>Get this membership in 50$</h2>
+    <form action="/contact" id='form' method="POST">
+    <input type="text" name="name" id="name" placeholder="Enter your name here...">
+    <input type="text" name="age" id="age" placeholder="Enter your age here...">
+    <input type="text" name="gender" id="gender" placeholder="Enter your gender here...">
+    <textarea name="address" id="address" cols="30" rows="5" placeholder="Enter your address here..."></textarea>
+    <textarea name="more" id="more" cols="30" rows="5" placeholder="Enter more about yourself here..."></textarea>
+    <button class="btn">Sumbit</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* Navigation Bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    color: white;
+    position: relative;
+}
+
+#navbar::before{
+    content: "";
+    margin-top: 5rem;
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#logo-name{
+    font-weight: bolder;
+    font-size: 1.8rem;
+    position: absolute;
+    left: 20px;
+}
+
+.list-items{
+    display: flex;
+    flex-wrap: wrap
+}
+
+.item{
+     list-style: none;
+}
+
+li a{
+    padding:0px 7px ;
+    margin: 1rem;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 1rem;   
+    color: white;
+}
+
+a:hover{
+    color: black;
+    background-color: white;
+}
+
+#search{
+    display: flex;
+    position: absolute;
+    right: 50px;
+}
+
+input{
+    padding: 0rem;
+    margin: 1rem;
+    width: 100px;
+    height: 15px;
+    border-radius: 0.3rem;
+}
+
+#search img{
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;;
+}
+
+/* Home Section  */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    height: 530px;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url(../static/images/bg3.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    z-index: -1;
+    opacity: 0.80;   
+}
+
+#home h1{
+    text-align: center;
+}
+
+#home p{
+    max-width: 70%;
+
+}
+
+span{
+    color:#8a2b2b;
+}
+
+.btn{
+    padding: 7px 20px;
+    border-radius: 0.5rem;
+    background-color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+}
+
+/* Section 2  */
+
+#services{
+    display:flex;
+    color: black;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    /* height: 100vh; */
+}
+
+.card{
+    /* border: 2px solid rgb(56, 51, 51); */
+    padding: 10px;
+    /* background: linear-gradient(to right bottom, rgb(255 0 0 / 65%), rgb(79 157 220)); */
+    color: white;
+    border-radius: 1rem;
+    margin: 2px 20px;
+    margin-bottom:60px;
+    height: 530px;
+    width: 350px;
+}
+
+.card1{
+    background: linear-gradient(to left top, rgb(255 0 0 / 65%), rgb(79 157 220));
+}
+.card2{
+    background: linear-gradient(to right bottom, rgb(255 0 0 / 65%), rgb(79 157 220));
+}
+.card3{
+    background: linear-gradient(to right top, rgb(255 0 0 / 65%), rgb(79 157 220));
+}
+
+.card img{
+    width: 325px;
+    height: 210px;
+    align-items: center;
+    display: block;
+    margin: auto;
+    padding: 8px 0px;
+    border-radius:1rem;
+}
+
+.card p{
+    max-width: fit-content;
+    text-align: justify;
+}
+
+/* .services::before{
+    content:"";
+    background: url(images/sec2.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    margin: 0;
+    z-index: -1;
+    opacity: 0.80;
+} */
+
+.card a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 2px 25px;
+    margin: 5px;
+    border-radius: 0.5rem;
+}
+
+.card {
+    transition: all 0.4s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.03);
+}
+
+#about::before{
+    content:"";
+    background: url(../static/images/sec2.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    margin: 0;
+    z-index: -1;
+    opacity: 0.80;
+}
+
+#about{
+    height:584px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glass-container{
+    height: 439px;
+    width: 60%;
+    margin: auto;
+    background: linear-gradient(to right top, #c0bfbf, #e4e2e2);
+    border-radius: 2rem;
+    opacity: 0.80;
+    /* max-width: 70%; */
+    /* color: white; */
+    /* display: block;
+    margin: auto; */
+}
+
+.glass-container p{
+    /* padding-top: 23px; */
+    text-align: justify;
+    padding: 23px 45px;
+}
+
+#top{
+    display: none;
+	position: fixed;
+	bottom: 4rem;
+	right: 1.7rem;
+	background-color: #0000;
+	border: none;
+	outline: none;
+	cursor: pointer;
+    /* filter: 0; */
+}
+
+/* Utility Classes */
+
+.h-primary{
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 12px;
+    color: white;
+}
+.h-secondary{
+    font-size: 3rem;
+    font-weight: bold;
+    /* padding: 90px 0px 12px 12px; */
+    /* color: black; */
+}
+
+.extra{
+    margin-top: 80px;
+    
+}
+
+.center{
+    text-align: center;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px
+}
+
+
+/* Media Queries*/
+@media(max-width: 930px)
+{
+    li a{
+        font-size: normal;
+        margin: 0.3rem;
+    }
+    #search{
+        display: none;
+    }
+    #logo-name{
+        display: none;
+        /* text-align: center; */
+    }
+    .card1{
+        height: 550px;
+    }
+    .glass-container{
+        width: 80%;
+        height: 550px;
+
+    }
+    .glass-container p{
+        padding: 0px 10px;
+        /* display: block;
+        margin: auto; */
+    }
+}
+
