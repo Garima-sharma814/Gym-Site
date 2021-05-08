@@ -1,5 +1,5 @@
 # Gym-Site
-Fully fledged Website for Gym with backend. 
+Fully fledged Website for Gym. 
 
 ## Requirements
 - Nodejs
