@@ -9,7 +9,7 @@ const app = express();
 const port = 80;
 const hostname = '127.0.0.1';
 
-app.use('/static', express.static('static')); // bg is a static file this is why we included this 
+app.use('/static', express.static('static')); // images a static file this is why we included this 
 app.use(express.urlencoded({ extended: true }));
 
 app.set('view engine', 'pug'); // Set the template engine as pug 
